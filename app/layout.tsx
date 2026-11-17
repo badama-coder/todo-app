@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: LayoutProps<"/">) => {
   return (
     <html lang="en" className="antialiased">
-      <body className="bg-[#EAF0EB] font-[Arial,Helvetica,sans-serif] text-[#213d35] flex w-screen h-screen justify-center items-center">{children}</body>
+      <body className="bg-[#EAF0EB] font-[Arial,Helvetica,sans-serif] text-[#213d35] flex w-screen h-screen justify-center items-center p-5">{children}</body>
     </html>
   );
 };

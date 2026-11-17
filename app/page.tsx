@@ -5,7 +5,7 @@ import { ListTodo } from "lucide-react";
 const HomePage = () => {
   return (
       <div className="bg-white w-2xl rounded-3xl">
-        <div className="p-8">
+        <div className="px-8 pt-8">
           <header className="flex gap-3 mb-6 items-center">
             <div className="bg-[#E5F2ED] rounded-2xl size-10 flex justify-center items-center">
               <ListTodo className="text-[#23735A]" />
@@ -15,8 +15,7 @@ const HomePage = () => {
           <TaskForm />
           <TaskFilters />
         </div>
-        
-        <Tasklist />
+        <Tasklist/>
       </div>
     
   );
