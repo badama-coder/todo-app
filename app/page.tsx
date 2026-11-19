@@ -40,9 +40,9 @@ const visibleTasks = tasks.filter((task)=> filter === "All" || (filter === "Acti
           </header>
         
           <TaskForm onCreateTask={createTask} />
-          <TaskFilters filter={filter} onFilter={setFilter} />
+          <TaskFilters filter={filter} onFilter={setFilter} tasks={visibleTasks}/>
         </div>
-        <Tasklist tasks={visibleTasks} onDelete={deleteTask} onToggle={toggleTask}/>
+        <Tasklist tasks={visibleTasks} onDelete={deleteTask} onToggle={toggleTask} hasTasks={tasks.length>0}/>
       </div>
     
   );
